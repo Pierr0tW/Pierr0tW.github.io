@@ -50,8 +50,10 @@ html, body {
   .p-text {
     position: absolute;
     position: relative;
-    left: 2%;
+    left: 1%;
+    background-color: rgb(238, 238, 238);
     color: rgb(0, 0, 0);
+
   }
 
   .imghr {
