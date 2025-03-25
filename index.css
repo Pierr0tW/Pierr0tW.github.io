@@ -19,6 +19,13 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-
+    }      
+    .uptitle-text {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 6%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
   }
 h1{font-family: "Fira Sans", Impact, fantasy;}
