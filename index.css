@@ -13,10 +13,12 @@ html, body {
   }
   .Infhr::after {
     background: rgb(255, 255, 255);
-    content: 'Information';
+    content: 'INFORMATIONS';
     padding: 0 10px;
     position: relative;
-    top: -19px;
+    top: -23px;
+    font-weight: 800;
+    font-size:x-large;
   }  
 
   .Sky-image {
@@ -59,9 +61,11 @@ html, body {
   }
   .imghr::after {
     background: rgb(255, 255, 255);
-    content: 'Images';
+    content: 'IMAGES';
     padding: 0 10px;
     position: relative;
-    top: -19px;
+    top: -23px;
+    font-weight: 800;
+    font-size:x-large;
   }  
 h1{font-family: "Fira Sans", Impact, fantasy;}
