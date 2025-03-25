@@ -1,6 +1,11 @@
 html, body {
     background-color: rgb(255, 255, 255) ;
-    background-image: url(images/pic4)
+    #bannerimage {
+        width: 100%;
+        background-image: url(images/pic4);
+        height: 405px;
+        background-position: center;
+      }
 }
 
 h1{font-family: "Fira Sans", Impact, fantasy;}
