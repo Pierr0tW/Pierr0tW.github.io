@@ -18,19 +18,7 @@ html, body {
     top: -14px;
   }  
 
-  .imghr {
-    color: #000000;
-    overflow: visible;
-    text-align: center;
-    height: 0px;
-  }
-  .imghr::after {
-    background: rgb(250, 250, 250);
-    content: 'Images en plus';
-    padding: 0 10px;
-    position: relative;
-    top: -14px;
-  }  
+
 
 
 
@@ -61,8 +49,22 @@ html, body {
 
   .p-text {
     position: absolute;
+    position: relative;
     left: 2%;
     color: rgb(0, 0, 0);
   }
-  
+
+  .imghr {
+    color: #000000;
+    overflow: visible;
+    text-align: center;
+    height: 0px;
+  }
+  .imghr::after {
+    background: rgb(250, 250, 250);
+    content: 'Images en plus';
+    padding: 0 10px;
+    position: relative;
+    top: -14px;
+  }  
 h1{font-family: "Fira Sans", Impact, fantasy;}
