@@ -50,7 +50,7 @@ html, body {
   .p-text {
     position: absolute;
     position: relative;
-    left: 1%;
+    padding: 10px 50px 20px;
     background-color: rgb(238, 238, 238);
     color: rgb(0, 0, 0);
 
