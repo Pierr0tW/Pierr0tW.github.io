@@ -9,13 +9,14 @@ html, body {
     overflow: visible;
     text-align: center;
     height: 0px;
+    width: 100%;
   }
   .Infhr::after {
-    background: rgb(250, 250, 250);
+    background: rgb(255, 255, 255);
     content: 'Information';
     padding: 0 10px;
     position: relative;
-    top: -14px;
+    top: -19px;
   }  
 
   .Sky-image {
@@ -57,10 +58,10 @@ html, body {
     height: 0px;
   }
   .imghr::after {
-    background: rgb(250, 250, 250);
+    background: rgb(255, 255, 255);
     content: 'Images';
     padding: 0 10px;
     position: relative;
-    top: -14px;
+    top: -19px;
   }  
 h1{font-family: "Fira Sans", Impact, fantasy;}
