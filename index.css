@@ -62,7 +62,7 @@ html, body {
   }
   .imghr::after {
     background: rgb(250, 250, 250);
-    content: 'Images en plus';
+    content: 'Images';
     padding: 0 10px;
     position: relative;
     top: -14px;
