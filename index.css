@@ -10,7 +10,7 @@ html, body {
     text-align: center;
     height: 0px;
   }
-.Infhr::after {
+  .Infhr::after {
     background: rgb(250, 250, 250);
     content: 'Information';
     padding: 0 10px;
@@ -24,7 +24,7 @@ html, body {
     text-align: center;
     height: 0px;
   }
-.imghr::after {
+  .imghr::after {
     background: rgb(250, 250, 250);
     content: 'Images en plus';
     padding: 0 10px;
