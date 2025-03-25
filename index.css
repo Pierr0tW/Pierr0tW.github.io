@@ -5,16 +5,14 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
   }
   .Infhr {
-    color: #000000;
+    color: black;
     overflow: visible;
     text-align: center;
-    height: 0px;
-    width: 100%;
   }
   .Infhr::after {
     background: rgb(255, 255, 255);
     content: 'INFORMATIONS';
-    padding: 0 10px;
+    padding: 0 30px;
     position: relative;
     top: -23px;
     font-weight: 800;
@@ -50,22 +48,22 @@ html, body {
   .p-text {
     position: absolute;
     position: relative;
-    padding: 10px 50px 20px;
+    padding: 1em;
     background-color: rgb(238, 238, 238);
     color: rgb(0, 0, 0);
 
   }
 
   .imghr {
-    color: #000000;
+    color: black;
     overflow: visible;
     text-align: center;
-    height: 0px;
+    
   }
   .imghr::after {
     background: rgb(255, 255, 255);
     content: 'IMAGES';
-    padding: 0 10px;
+    padding: 0 30px;
     position: relative;
     top: -23px;
     font-weight: 800;
