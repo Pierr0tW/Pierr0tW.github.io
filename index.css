@@ -132,7 +132,7 @@ html, body {
       display: flex;
       flex-direction: column;
       width: 400px;
-      height: 875px;
+      height: 875%;
       background-color: rgb(243, 243, 243);
     }
 
