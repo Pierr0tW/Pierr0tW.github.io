@@ -14,7 +14,7 @@ html, body {
     content: 'INFORMATIONS';
     padding: 0 30px;
     position: relative;
-    top: -23px;
+    top: -27px;
     font-weight: 800;
     font-size:x-large;
   }  
@@ -73,16 +73,23 @@ html, body {
     content: 'IMAGES';
     padding: 0 30px;
     position: relative;
-    top: -23px;
+    top: -27px;
     font-weight: 800;
     font-size:x-large;
   }  
 
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+    background-color: rgb(243, 243, 243);
+  }
+
   .pic1-image {
     background-image: url("images/pic2.png");
     height: 250px;
-    width: 250px;
-    left: 2%;
+    width: 300px;
+    top: 25px;
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -92,8 +99,8 @@ html, body {
   .pic2-image {
     background-image: url("images/pic4.png");
     height: 250px;
-    width: 250px;
-    left: 30%;
+    width: 300px;
+    top: 25px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -101,13 +108,14 @@ html, body {
   }  
 
   .pic3-image {
-    background-image: url("images/pic5.png");
+    background-image: url("images/pic1.png");
     height: 250px;
-    width: 250px;
-    left: 60%;
+    width: 300px;
+    top: 25px;
     background-position: right;
     background-size: cover;
     position: relative;
   }  
+
 h1{font-family: "Fira Sans", Impact, fantasy;}
 h3{font-family: "Fira Sans", Impact, fantasy;}
