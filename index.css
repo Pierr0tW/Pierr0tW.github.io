@@ -85,6 +85,15 @@ html, body {
     background-color: rgb(243, 243, 243);
   }
 
+  .downtitle-text {
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: -10px;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+  }
+
   .pic1-image {
     background-image: url("images/pic2.png");
     height: 250px;
