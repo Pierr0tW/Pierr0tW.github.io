@@ -96,7 +96,7 @@ html, body {
   }
 
   .pic1-image {
-    background-image: url("images/pic2.png");
+    background-image: url("../images/pic2.png");
     height: 250px;
     width: 300px;
     top: 25px;
@@ -107,7 +107,7 @@ html, body {
   }  
 
   .pic2-image {
-    background-image: url("images/pic4.png");
+    background-image: url("../images/pic4.png");
     height: 250px;
     width: 300px;
     top: 25px;
@@ -118,7 +118,7 @@ html, body {
   }  
 
   .pic3-image {
-    background-image: url("images/pic1.png");
+    background-image: url("../images/pic1.png");
     height: 250px;
     width: 300px;
     top: 25px;
@@ -137,7 +137,7 @@ html, body {
     }
 
     .pic1-image {
-      background-image: url("images/pic2.png");
+      background-image: url("../images/pic2.png");
       height: 250px;
       width: 300px;
       top: 15px;
@@ -148,7 +148,7 @@ html, body {
     }  
 
     .pic2-image {
-      background-image: url("images/pic4.png");
+      background-image: url("../images/pic4.png");
       height: 250px;
       width: 300px;
       top: 15px;
@@ -159,7 +159,7 @@ html, body {
     }  
     
     .pic3-image {
-      background-image: url("images/pic1.png");
+      background-image: url("../images/pic1.png");
       height: 250px;
       width: 300px;
       top: 15px;
