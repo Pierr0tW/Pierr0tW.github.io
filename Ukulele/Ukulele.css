@@ -20,7 +20,7 @@ html, body {
   }  
 
   .Sky-image {
-    background-image: url("images/pic3.png");
+    background-image: url("../images/pic10.jpg");
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
