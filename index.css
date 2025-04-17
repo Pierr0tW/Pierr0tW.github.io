@@ -20,9 +20,9 @@ html, body {
   }  
 
   .Sky-image {
-    background-image: url("images/identiteb.png");
-    height: 50%;
+    background-image: url("images/identited.png");
     background-position: center;
+    height: 70%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
