@@ -1,173 +1,172 @@
 html, body {
     background-color: rgb(255, 255, 255) ;
-    height: 100%;
-    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-  }
-  .Infhr {
-    color: black;
-    overflow: visible;
-    text-align: center;
-  }
-  .Infhr::after {
-    background: rgb(255, 255, 255);
-    content: 'INFORMATIONS';
-    padding: 0 30px;
+}
+.cercle {  
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #fdebd0;
+    border: 4px solid black;
     position: relative;
-    top: -27px;
-    font-weight: 800;
-    font-size:x-large;
-  }  
-
-  .Sky-image {
-    background-image: url("images/identited.png");
-    background-position: center;
-    height: 70%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }      
-  .Sky-text {
-    text-align: center;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    }      
-    .uptitle-text {
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 4%;
-    transform: translate(-50%, -50%);
-    color: rgb(0, 0, 0);
-  }
-
-  .uprighttitle-text {
-    text-align: center;
-    position: absolute;
-    left: 97%;
-    top: 4%;
-    transform: translate(-50%, -50%);
-    color: rgb(0, 0, 0);
-  }
-
-  .p-text {
-    position: absolute;
-    position: relative;
-    padding: 1em;
-    background-color: rgb(243, 243, 243);
-    color: rgb(0, 0, 0);
-
-  }
-
-  .imghr {
-    color: black;
-    overflow: visible;
-    text-align: center;
-    
-  }
-  .imghr::after {
-    background: rgb(255, 255, 255);
-    content: 'IMAGES';
-    padding: 0 30px;
-    position: relative;
-    top: -27px;
-    font-weight: 800;
-    font-size:x-large;
-  }  
-
-  .flex-container {
     display: flex;
-    justify-content: space-evenly;
-    height: 300px;
-    background-color: rgb(243, 243, 243);
-  }
-
-
-  .downtitle-text {
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    position: relative;
-    left: 50%;
-    top: -10px;
-    transform: translate(-50%, -50%);
-    color: rgb(0, 0, 0);
+    font-weight: bold;
   }
 
-  .pic1-image {
-    background-image: url("images/pic2.png");
-    height: 250px;
-    width: 300px;
-    top: 25px;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }  
+/* Image dans les cercles */
+.cercleIcon {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+}
+.bdpic{    
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    right: 22%;
+}
 
-  .pic2-image {
-    background-image: url("images/pic4.png");
-    height: 250px;
-    width: 300px;
-    top: 25px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }  
+.cercle span {
+    margin-top: 50px;
+    display: block;
+}
 
-  .pic3-image {
-    background-image: url("images/pic1.png");
-    height: 250px;
-    width: 300px;
-    top: 25px;
-    background-position: right;
-    background-size: cover;
-    position: relative;
-  }  
+.bubble {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
+    justify-items: center;
+}
 
-  @media (max-width: 800px) {
-    .flex-container {
-      display: flex;
-      flex-direction: column;
-      width: 400px;
-      height: 875px;
-      background-color: rgb(243, 243, 243);
-    }
+.navigation{
+    background-color: #2E4365;
+    margin: 3em;
+    border: solid black 2px;
+    border-radius: 13px;
+    padding: 1em;
+}
 
-    .pic1-image {
-      background-image: url("images/pic2.png");
-      height: 250px;
-      width: 300px;
-      top: 15px;
-      background-position: left;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-    }  
+.navigation h1{
+    background-color: #F5ECD5;
+    text-align: center;
+    margin: 0 5em 2em 5em;
+    padding: 0.5em 2.5em 0.5em 2.5em;
+    border: solid 2px black;
+    border-radius: 13px;
+}
 
-    .pic2-image {
-      background-image: url("images/pic4.png");
-      height: 250px;
-      width: 300px;
-      top: 15px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-    }  
-    
-    .pic3-image {
-      background-image: url("images/pic1.png");
-      height: 250px;
-      width: 300px;
-      top: 15px;
-      background-position: right;
-      background-size: cover;
-      position: relative;
-    }  
-  }
+.navigation li{
+    background-color: #F5ECD5;
+    border: solid black 2px;
+    list-style: none;
+    margin: 0 12em 2em 10em;
+    text-align: center;
+    padding: 1em;
+    border-radius: 13px;
+}
 
-h1{font-family: "Fira Sans", Impact, fantasy;}
-h3{font-family: "Fira Sans", Impact, fantasy;}
+main{
+    margin: 3em 3em 3em 3em;
+}
+
+.indexMain article{
+    background-color: #2E4365;
+    padding: 1em;
+    margin: 3em 0em 3em 0;
+    border: solid 2px black;
+    border-radius: 13px;
+}
+
+p{
+    color: white;
+}
+
+.identite li{
+    color: white;
+    padding: 0.75em;
+}
+
+.bloc{
+    display: grid;
+    grid-template-columns: 1fr 0.50fr
+}
+
+.bloc img{
+    width: 70%;
+    border: #FFCE3A solid 3px;
+    border-radius: 3px;
+}
+
+.bubble li{
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.indexMain h2{
+    background-color: #F5ECD5;
+    text-align: center;
+    margin: 0 5em 0.5em 5em;
+    padding: 0.5em 2.5em 0.5em 2.5em;
+    border: solid 2px black;
+    border-radius: 13px;
+}
+
+.competence ul{
+    list-style: none;
+}
+
+.underArticle table{
+    display: flex;
+    margin: -7.5em 0 -5em 0;
+    justify-content: center;
+    border-spacing: 5em;
+}
+.underArticle th{
+    text-align: center;
+    background-color: #F5ECD5;
+    border: 3px black solid;
+    width: 10em;
+    padding: 1em;
+    border-radius: 13px;
+}
+
+.contact{
+    text-align: center;
+}
+
+.contact table{
+    display: flex;
+    justify-content: center;
+    border-spacing: 20px;
+}
+
+.contact th{
+    text-align: center;
+    background-color: #F5ECD5;
+    border: 3px black solid;
+    width: 10em;
+    padding: 1em;
+    border-radius: 13px;
+}
+.underArticle li{
+    background-color: #F5ECD5;
+    border: solid black 2px;
+    list-style: none;
+    width: 10em;
+    text-align: center;
+    padding: 1em;
+    border-radius: 13px;
+}
+
+
