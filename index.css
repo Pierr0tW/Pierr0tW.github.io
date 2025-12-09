@@ -3,8 +3,8 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 .cercle {  
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background: #fdebd0;
     border: 4px solid black;
@@ -12,21 +12,19 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     font-weight: bold;
   }
 
 /* Image dans les cercles */
 .cercleIcon {
-    width: 80px;
-    height: 80px;
-    padding: 5px;
+    width: 60px;
+    height: 60px;
     position: absolute;
     top: 10px;
 }
 .bdpic{    
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     padding: 5px;
     position: absolute;
     top: 10px;
@@ -35,14 +33,18 @@ html, body {
 
 .cercle span {
     margin-top: 50px;
-    display: block;
 }
-
 .bubble {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3em;
+    grid-template-columns: 10fr 0.1fr 10fr;
     justify-items: center;
+}
+.bubbleItem{
+    margin: 2em 0em 1em 0em;
+    transition: 1s;
+}
+.bubbleItem:hover{
+    transform: scale(1.20);
 }
 
 .navigation{
@@ -69,7 +71,12 @@ html, body {
     margin: 0 12em 2em 10em;
     text-align: center;
     padding: 1em;
+    transition: 1s;
     border-radius: 13px;
+}
+
+.navigation li:hover{
+    transform: scale(1.10);
 }
 
 main{
@@ -157,16 +164,26 @@ a{
     border: 3px black solid;
     width: 10em;
     padding: 1em;
+    transition: 1s;
     border-radius: 13px;
 }
-.underArticle li{
+.contact th:hover{
+    transform: scale(1.20);
+}
+
+.underArticle th{
     background-color: #F5ECD5;
     border: solid black 2px;
     list-style: none;
     width: 10em;
     text-align: center;
     padding: 1em;
+    transition: 1s;
     border-radius: 13px;
+}
+
+.underArticle th{
+    transform: scale(1.20);
 }
 
 
