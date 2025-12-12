@@ -1,7 +1,39 @@
 html, body {
     background-color: rgb(255, 255, 255) ;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 110%;
 }
+
+.upperHeader{
+    background-color: #2E4365;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.upperHeader img{
+    width: 5em;
+    margin: 1.5em 3em 0 3em;
+}
+
+.underHeader{
+    background-color: #F5ECD5;
+    border: solid black 2px;
+    list-style: none;
+    width: 75%;
+    text-align: center;
+    transition: 1s;
+    border-radius: 13px;
+    margin: 0.5em 0 0 12.5%;
+}
+
+header .upperHeader .title{
+    background-color: #F5ECD5;
+    text-align: center;
+    border: solid 3px black;
+    border-radius: 13px;
+}
+
 .cercle {  
     width: 150px;
     height: 150px;
@@ -32,8 +64,10 @@ html, body {
 }
 
 .cercle span {
+    font-size: 87%;
     margin-top: 50px;
 }
+
 .bubble {
     display: grid;
     grid-template-columns: 10fr 0.1fr 10fr;
@@ -77,6 +111,7 @@ html, body {
 
 .navigation li:hover{
     transform: scale(1.10);
+    border: black 5px solid;
 }
 
 main{
@@ -111,6 +146,21 @@ p{
     border-radius: 3px;
 }
 
+.bloc button{
+    width: 70%;
+    background-color: #F5ECD5;
+    border-radius: 13px;
+    margin: 0.5em;
+    padding: 1em;
+    border: solid 3px black;
+    transition: 1s;
+}
+
+.bloc button:hover{
+    transform: scale(1.20);
+    border: black 5px solid;
+}
+
 .bubble li{
     color: black;
 }
@@ -133,32 +183,21 @@ a{
     list-style: none;
 }
 
-.underArticle table{
-    display: flex;
-    margin: -7.5em 0 -5em 0;
-    justify-content: center;
-    border-spacing: 5em;
-}
-.underArticle th{
-    text-align: center;
-    background-color: #F5ECD5;
-    border: 3px black solid;
-    width: 10em;
-    padding: 1em;
-    border-radius: 13px;
-}
+
 
 .contact{
     text-align: center;
 }
 
-.contact table{
+.contact ul{
     display: flex;
     justify-content: center;
     border-spacing: 20px;
+    margin: 1em;
+    list-style: none;
 }
 
-.contact th{
+.contact li{
     text-align: center;
     background-color: #F5ECD5;
     border: 3px black solid;
@@ -166,12 +205,20 @@ a{
     padding: 1em;
     transition: 1s;
     border-radius: 13px;
+    list-style: none;
+    margin: 0 1em;
 }
-.contact th:hover{
+.contact li:hover{
     transform: scale(1.20);
+    border: black 5px solid;
 }
 
-.underArticle th{
+.underArticle ul{
+    display: flex;
+    margin: -2.5em 0 0 0;
+    justify-content: center;
+}
+.underArticle li{
     background-color: #F5ECD5;
     border: solid black 2px;
     list-style: none;
@@ -180,10 +227,127 @@ a{
     padding: 1em;
     transition: 1s;
     border-radius: 13px;
+    margin: 1em;
 }
 
-.underArticle th{
+.underArticle li:hover{
+    transform: scale(1.20);
+    border: black 5px solid;
+}
+
+footer{
+    background-color: #2E4365;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    padding: 2em;
+}
+
+footer p{
+    margin-top: 4em;
+}
+
+footer .ullist{
+    grid-column: 2/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer li{
+    background-color: #F5ECD5;
+    width: 75%;
+    margin: 1em 1em 1em 1em;
+    list-style: none;
+    padding: 0.5em;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 13px;
+    transition: 1s;
+}
+footer .ul1{
+    grid-column: 1/2;
+}
+footer .ul2{
+    grid-column: 2/2;
+}
+
+footer li:hover{
     transform: scale(1.20);
 }
 
+.projetContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.projTexte{
+    grid-column: 1/2;
+    margin: 2em 1em 0 4em;
+    text-align: left;
+}
+.projTexte h3{
+    background-color: #F5ECD5;
+    border: solid black 3px;
+    width: 30%;
+    padding-left: 2%;
+    padding: 0.25em;
+    margin-left: 30%;
+    border-radius: 13px;
+    text-align: center;
+    margin-bottom: -1em;
+}
+.projTexte ul{
+    color: white;
+}
+.projTexte h4{
+    color: white;
+    
+}
+.projTexte hr{
+    border: 1px solid white;
+    margin: 0 -1em 0 -1em;
+}
+.projPic{
+    grid-column: 2/2;
+    margin: 0 0 0 4em;
+}
+.projPic img{
+    transition: 1s;
+    width: 98.5%;
+    border: #F5ECD5 solid 3px ;
+}
+.projPic figure{
+    margin: 2em 0 1em 0;
+    width: 74%;
+}
+.projPic figure img:hover{
+    transform: scale(1.025);
+    border: #FFCE3A solid 5px ;
+    margin-bottom: 0.7em;
+}
+
+.projPic .picR1:hover{
+    transform: rotateZ(-3deg) scale(1.05);
+}
+
+.projPic figure figcaption{
+    transition: 2s;
+    color: #000000;
+    background-color: #F5ECD5;
+    border: solid 2px black;
+    font-size: 70%;
+    border-radius: 7px;
+    padding: 0.25em;
+    text-align: center;
+}
+
+.projPic figure:hover figcaption{
+    border: #000000 4px solid;
+    transform: scale(1.2);
+    border-radius: 20px;
+
+}
+
+.projPic .picR2:hover{
+    transform: rotateZ(2deg) scale(1.05);
+}
 
