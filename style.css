@@ -15,6 +15,22 @@ html, body {
     width: 5em;
     margin: 1.5em 3em 0 3em;
 }
+article{
+    background-color: #2E4365;
+    margin: 3em;
+    border: solid black 2px;
+    border-radius: 13px;
+    padding: 1em;
+}
+
+article h1{
+    background-color: #F5ECD5;
+    text-align: center;
+    margin: 0 5em 2em 5em;
+    padding: 0.5em 2.5em 0.5em 2.5em;
+    border: solid 2px black;
+    border-radius: 13px;
+}
 
 .underHeader{
     background-color: #F5ECD5;
