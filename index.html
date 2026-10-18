@@ -1,201 +1,150 @@
 <!DOCTYPE html>
 <html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pierre-Alain</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" href="../images/logoPNG.png">
+</head>
 
-    <!-- Entête -->
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pierre-Alain WESTER</title>
-        <link href="style.css" rel="stylesheet" type="text/css" />
-    </head>
-<!--BODY-->
 <body>
-    <header>
-        <div class="upperHeader">
-            <a href="./index.html"><img src="./images/icones/maison.png" alt="Image de maison pour retour à l'Accueil" title="Image de maison pour retour à l'Accueil"></a>
-            <div class="title">
-                <h1>Pierre-Alain WESTER</h1>
-                <h3>Développeur informatique Junior</h3>
+
+<header>
+    <div class="HeaderTop">
+        <div class="HeaderLeft">
+            <img src="../images/logoPNGBlack.png" alt="Logo Alonrio">
+            <h1>Alonrio</h1>
+        </div>
+        <div class="HeaderMain"  id="Who">
+            <h1>Pierre-Alain WESTER</h1>
+            <h2>Développeur Informatique</h2>
+    </div>
+</header>
+<nav class="HeaderBottom">
+    <a href="#Who">Présentation</a>
+    <a href="#Projet">Mes projets</a>
+    <a href="#">Contact</a>
+    <a href="#">Accueil</a>
+</nav>
+
+<main>
+    <section class="About">
+        <h2>Qui suis-je ?</h2>
+        <div class="AboutIntro">
+            <p class="About">
+                Pierre-Alain WESTER, développeur amateur polyvalent et passionné depuis plus de 10 ans.
+                Au fil des années, j'ai pu expérimenter plusieurs langages de programmation et pratiquer l'informatique,
+                notamment le C, Java, Python, PHP, Bash, le développement WEB (HTML, CSS, JS) et les bases de données (MySQL, MariaDB, PostgreSQL).
+                <br>
+                Dans le cadre de mon BUT Informatique à Lannion je suis actuellement à la recherche d'une alternance dans plusieurs domaines comme la base de donnée,
+                le développement web, développement Front et Back end afin de développer mes compétences et de gagner en expérience. <br>
+            </p>
+           
+            <p class="Objectif">
+                Mes objectifs sont d'accompagner des personnes dans leurs projets et de développer mes projets personnels
+                grâce à la création de chartes graphiques, au maquettage, au développement web, aux services d'hébergement
+                et à la mise à disposition de produits comme mes bots Discord.
+            </p>
+
+            <div class="AboutPhoto">
+                <img src="../images/identiteb copie.png" alt="Portrait de Pierre-Alain Wester">
+                <a href="../PDF/cvPAWester.pdf">Voir mon cv</a>
             </div>
         </div>
-            <div class="underHeader"><h3>Accueil</h3></div>
-        </div>
-    </header>
-
-    <nav class="navigation">
-        <h1>Navigation :</h1>
-        <ul>
-            <li>
-                <a href="#carteIdentite">Carte d'identité</a>
-            </li>
-            <li>
-                <a href="#competence">Mes compétences</a>
-            </li>
-            <li>
-                <a href="#projet">Mes projets en bref</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </nav>
-
-    <main class="indexMain">
-        <article class="carteIdentite">
-            <h2>Carte d'identité</h2>
-            <div class="bloc">
-                <ul class="identite">
-                    <li>
-                        Pierre-Alain WESTER
-                    </li>
-                    <li>
-                        10 Mai 2006
-                    </li>
-                    <li>
-                        Au BUT Informatique à l'IUT de Lannion
-                    </li>
-                    <li>
-                        Pseudo : Pierr0tW
-                    </li>
-                    <p>Je suis quelqu'un de passioné qui donne son maximum pour la réalisation de ses ou les projets dans lesquels je suis embarqués. Pour plus d'information sur moi, cliquez sur le bouton à droite "plus sur moi".</p>
-                </ul>
-                    <figure>
-                        <img src="./images/identiteb.png" title="Image de Pierre-Alain WESTER" alt="Image de Pierre-Alain WESTER">
-                        <figcaption>
-                            <button><a href="#"><strong>Plus sur moi</strong></a></button>
-                        </figcaption>
-                    </figure>
+    </section>
+    <hr>
+    <div class="MainCarte" id="Projet">
+        <h2>Mes projets réalisés :</h2>
+        <section class="Carte">
+            <div class="h3CarteBis"><h3>Skylonrio :</h3></div>
+            <article class="Left">
+                <div class="LeftText">
+                    <p>
+                        commencer en 2020, Skylonrio est un serveur Minecraft que j'ai développer afin d'acquerrir de nouvelles compétences. Projet au connaissance Polyvalente on était plusieurs derriere ce projet, j'étais charger du développement des Plugins en JAVA à l'aide des librairie Spigot et Bukkit, ainsi que la création des bases de données avec MySQL ou MariaDB. J'ai aussi appris à faire de la configuration de Plugin proposer par d'autre développeur Minecraft.<br>
+                    </p>
                 </div>
-        </article>
-
-        <article class="competence">
-            <h2>Mes compétences en dev :</h2>
-            <ul class="bubble">
-                <li class="bubbleItem"><div class="cercle"><img src="./images/icones/dev-2.png" title="Icone dev" alt="Icone dev" class="cercleIcon"><span>Programmation</span></div></li>
-                <li class="bubbleItem"><div class="cercle"><img src="./images/icones/globe.png" title="Icone Web" alt="Icone Web" class="cercleIcon"><span>WEB</span></div></li>
-                <li class="bubbleItem"><div class="cercle"><img src="./images/icones/figma.png" title="Icone Figma" alt="Icone Figma" class="cercleIcon"><span>Maquetage</span></div></li>
-                <li class="bubbleItem"><div class="cercle"><img src="./images/icones/discord.png" title="Icone Discord" alt="Icone Discord" class="cercleIcon"><span>Serveur Discord</span></div></li>
-                <li class="bubbleItem"><div class="cercle"><img src="./images/icones/gestion-de-base-de-donnees.png" title="Icone Base de Donnée" alt="Icone Base de donnée" class="bdpic"><span>Base de données</span></div></li>
-                <li class="bubbleItem"><div class="cercle"><img src="./images/icones/docker.png" title="Icone Docker" alt="Icone Docker" class="cercleIcon"><span>Docker</span></div></li>
-            </ul>
-        </article>
-
-        <article class="projet">
-            <h2>Mes Projets en bref :</h2>
-            <section class="projetContent">
-
-                <div class="projTexte">
-                    <hr>
-                    <h3>Extra scolaire</h3>
-                    <h4><u>Skylonrio :</u></h4>
-                    <p>Skylonrio est un serveur Minecraft fait à la base en projet solitaire qui à commencé lors du confinement et que je continue encore. <br>
-                        C'est un serveur Minecraft dans le principe du Skyblock avec des quêtes RPG, des objets customisés, des environnements customisés etc...</p>
-                    <h4><u>Alonrio :</u></h4>
-                    <p>Alonrio est le nom que je donne avant chacun de mes projets, c'est un peu une marque. 
-                        <br>Avec Alonrio j'ai crée de nombreux projet notamment sur Minecraft comme les plugins AlonrioReducedCommand ainsi que AlonrioJoinQuitMessage, ou les mods Alonrio BetterVanillaOre (plus de 400 téléchargement sur Cruse Forge) Alonrio Tools&Misc, ainsi que le modpack Alonrio-Colonies (plus de 350 téléchargement sur Curse Forge)</p>
-                    <h4><u>Musique :</u></h4>
-                    <p>J'ai fait de nombreux projet en rapport avec la musique comme 2 fois l'après midi des talents organiser par mon lycée ou bien mes propres compositions.</p>
-                    <h4><u>Plus :</u></h4>
-                    <p>Création de nombreux serveur discord. Montage pour Chaine Youtube</p>
-                        <!-- <p>Lors du confinement, j'ai commencé mon projet appelé Skylonrio. <br> 
-                    Ce projet m'a permis de m'améliorer en informatique et dans l'organisation, en effet j'ai crée un cahier des charges. Ce projet à fortement développer ma créativité dans le domaine du game design et dans la construction d'un projet (par exemple une construction minecraft ou même le maquetage d'un site)<br>
-                    <br>Dans ce projet j'ai appris à configurer des fichiers Json, developper des plugins en Java, organiser une petite équipe (deux Builder) suivre des besoins client (les recommendations des joueurs par exemple ou juste étudier les besoins de ces joueurs)<br></p> -->
-                    <hr>
-                    <h3>intra Scolaire</h3>
-                    <h4><u>Projet Lycée</u></h4>
-                    <p>au lycée j'ai participé à énormement d'option qui m'ont permis de développer mes compétences voici une liste des projets fait :</p>
-                    <ul>
-                        <li>EDVL (Entreprise dans votre lycée) : nous devons crée une entreprise en petit groupe</li>
-                        <li>Nuit du Code : c'est une gameJam internationnale ou nous devons crée un jeu vidéo en python en un temp très restraint</li>
-                        <li>Journée de la science : nous avons du crée un sous-marin télécomandé (je me suis occupé de la programmation)</li>
-                        <li>CNRD (Concours National de la Resistance et de la Déportation) : C'est un concours sur l'histoire ou nous avons fait lauréat. Nous devions faire de nombreuses recherche en groupe, du sourçage, j'ai fait un montage documentaire, et tout cela dans un temps très court</li>
-                    </ul>
-                    <h4><u>Projet IUT :</u></h4>
-                    <p>à l'iut nous avons fait de nombreux projet pour apprendre la programmation mais aussi comment appréhender le milieu professionel par exemple :</p>
-                    <ul>
-                        <li>Un sokoban dans un terminal en C</li>
-                        <li>Un site internet avec des contraintes comme un client pourrait avoir</li>
-                        <li>étude d'une entreprise</li>
-                        <li>développement d'un script PHP pour automatiser l'addaptation de document au format souhaité</li>
-                        <li>développement d'une base de données à partir d'un besoin d'une entreprise éléctrique (donc par exemple gérer le stockage du taux de la consommation éléctrique d'un client)</li>
-                    </ul>
-                    <!-- <p>Lors de mes études à l'iut j'ai fait de nombreux projet pour apprendre à pratiquer ainsi que les pratiques qui se faisait dans le métier. Par exemple pour apprendre à pratiquer le langage C j'ai du développer un Sokoban de 0 et le rendre jouable dans un terminal. <br>
-                        <br>Pour apprendre les besoins d'un client nous avons du développer un <a href=""><u>site Web</u> </a>ou nous devions répondre en équipe de 4 aux besoin d'un office de tourisme (dans notre cas c'était un office Argentin). Nous devions faire une version "Desktop" donc une version ordinateur mais aussi "responsive" donc tablette et mobile tout en respectant les besoins d'un client "typique"</p>
-                     -->
-                    <hr>
+                <div class="RigthIMG">
+                    <img src="../images/SkylonrioLogo.png">
                 </div>
-                <div class="projPic">
-                    <figure>
-                        <img class="picR1" src="./images/pic5.png" alt="Image illustrant le serveur minecraft que j'ai fait" title="Image illustrant le serveur minecraft que j'ai fait">
-                        <figcaption>Image de Skylonrio</figcaption>
-                    </figure>
-                    <figure>
-                        <img class="picR2" src="./images/Monatge2.png" title="Image de la timeline d'un montage que j'ai fait pour le CNRD" alt="Image de la timeline d'un montage que j'ai fait pour le CNRD">
-                        <figcaption>Image de la Timeline d'un montage que j'ai réalisé</figcaption>
-                    </figure>
-                    <figure>
-                        <img class="picR2" src="./images/pic10.jpg" title="Image de moi lors de l'après midi des talents j'ai chanter et fait du ukulele (j'ai fait Riptide Vance Joy)" alt="Image de moi lors de l'après midi des talents j'ai chanter et fait du ukulele (j'ai fait Riptide Vance Joy)">
-                        <figcaption>Image de moi lors de "l'après midi des talents"</figcaption>
-                    </figure>
-                    <figure>
-                        <img class="picR1" src="./images/soko 2.png" alt="Image du terminal avec le sokoban en jeu" title="Image du terminal avec le sokoban en jeu">
-                        <figcaption>Image du sokoban réalisé</figcaption>
-                    </figure>
-                    <figure>
-                        <img class="picR2" src="./images/jeuPython.png" alt="Image de mon jeu fait lors de la nuit du code" title="image de mon jeu fait lors de la nuit du code">
-                        <figcaption>Image du jeu Python fait lors de la "Nuit du Code"</figcaption>
-                    </figure>
+
+                <div class="TextBottom">
+                    <br>étant le fondateur du projet j'ai du organiser une équipe notament à l'aide de diagramme de Gantt, cahier des charges etc... afin de mener le projet à bien et à organiser l'équipe.
+                    <br>Ce projet m'a aussi permis de développer mes compétences de recueil du besoin client, les joueurs avaient des exigences ou bien trouvaient des bugs et me les rapportaient afin que je puisse les résoudre.
                 </div>
+            </article>
+        </section>
+        <div class="Trio">
+            <section class="CarteLeft">
+                <div class="h3CarteBasique"><h3>Mod CurseForge :</h3></div>
+                    <p>Lors de l'année 2026, Je me suis mis au défi d'apprendre à faire des mods minecraft en 1 semaine, conclusion de cette semaine 2mods minecraft disponible sur le profil <a href="https://www.curseforge.com/members/alonrio/projects">Curse Forge d'Alonrio</a><br>
+                        <br>Ce défi m'a permis d'apporter de nombreuses connaissance en JAVA et m'a appris à m'ograniser dans un temps extremement réduit.
+                    </p>
             </section>
-        </article>
-        <nav class="underArticle">
-            <table>
-                <ul>
-                    <li>
-                        <a href="#">Dev</a>
-                    </li>
-                    <li>
-                        <a href="#">Alonrio</a>
-                    </li>
-                    <li>
-                        <a href="#">Musique</a>
-                    </li>
-                    <li>
-                        <a href="#">Autre Projet</a>
-                    </li>
-                </ul>
-            </table>
-        </nav>
-
-        <article class="contact">
-            <h2>Contact :</h2>
-            <p>Voici les liens vers mes réseaux sociaux ainsi que celle d'Alonrio.<br>Pour accéder aux différents Email cliquez sur la bulle.</p>
-            <nav class="inArticle">
-                <ul>
-                       <li><a href="#">GitHub Personnel</a></li><li><a href="#">LinkedIn</a></li><li><a href="#">GitHub Alonrio</a></li>
-                </ul>
-                <ul>   
-                        <li><a href="mailto:pierre.alain.wester@gmail.com">Email Personnel</a></li><li>07.69.99.06.00</li><li><a href="mailto:alonrio.mc@gmail.com">Email Alonrio</a></li>
-                </ul>
-            </nav>
-        </article>
-
-    </main>
-
-    <footer>
-        <p>
-            ©2025 Pierre-Alain WESTER.<br>
-            Tous droits réservés.
-        </p>
-        <div class="ullist">
-            <ul class="ul1">
-                <li><a href="#">Moi</a></li> <li><a href="#">Projet</a></li>
-            </ul>
-            <ul class="ul2">
-                <li><a href="./contact.html">Contact</a></li><li><a href="#">Alonrio</a></li>
-            </ul>
+            <section class="CarteMid">
+                <div class="h3CarteBasique"><h3>Projet Lycée:</h3></div>
+                <p>Lors de ma periode au lycée j'ai pu experimenter de nombreuses experience comme le concours National de la resistance, Entreprise dans votre lycée, ou bien une représentation au Ukulele et chant devant tout mon lycée.</p>
+                <p>Ces experiences m'ont permis de m'organiser autour d'un projet et travailler avec les autres ou bien être à l'aise devant un grand nombre de personne.</p>
+            </section>
+            <section class="CarteRight">
+                <div class="h3CarteBasique"><h3>Projet IUT Informatique:</h3></div>
+                <p>Pendant ma formation à l'IUT j'ai déja fait de nombreux projet, j'ai d'abord fait un sokoban (un jeu casse tête) sur un terminal en langage C. J'ai ensuite pu dans le cadre du recueil du besoin crée un site vitrine.<br><br> J'ai pu faire un programme en PHP avec des images docker pour convertir des fichiers, mais aussi la création d'une base de donnée.</p>
+            </section>
         </div>
-    </footer>
+    </div>
+    <hr>
+    <div class="competence">
+        <h2>Mes compétences :</h2>
+        <section class="MainCompetence">
+            <article class="Row1"><img src="../images/c.png"> <img src="../images/html5.png"> </article>
+            <article class="Row2"></article>
+            <article class="Row3"></article>
+        </section>
+    </div>
+
+
+    <div class="MainCarte">
+        <h2>Mes éxperiences professionels :</h2>
+        <div class="Trio">
+            <section class="CarteLeft">
+                <div class="h3CarteBasique"><h3>Milieu professionel :</h3></div>
+                    <p>J'ai eu l'occasion de faire 4 stages lors de mon cursus scolaire. </p>
+                        <ul>
+                            <li>Le premier était un stage à la gendarmerie de plourin les morlaix en 2020.</li>
+                            <li>Le second chez animotopia (vendeur / facing) en 2020.</li>
+                            <li>Le troisieme était un stage (observation) dans le palais de justice de Nantes en 2021.</li>
+                            <li>Le dernier était chez Optic 2000 (facing / vente / montage optique) à Pacé en 2022.</li>
+                        </ul>
+            </section>
+            <section class="CarteMid">
+                <div class="h3CarteBasique"><h3>diplome / lauréat :</h3></div>
+                <ul>
+                <li>En 2025 j'ai eu mon Bac à Lauréat spécialité <br> Mathématique <br> Numérique Et science de l'informatique (NSI) <br> (Physique Chimie en premiere)</li>
+                <li>En 2025 j'ai été Lauréat du Concours Nationale de la Resistance et de la déportation (CNRD) ou j'ai pu faire le travail d'un groupe de 11</li>
+                </ul>
+            </section>
+            <section class="CarteRight">
+                <div class="h3CarteBasique"><h3>En cours :</h3></div>
+                <ul>
+                    <li>BUT informatique à Lannion 1ère année</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <hr>
+    <div class="FooterLeft">
+        <h4>WEBMASTER : Pierre-Alain WESTER</h4>
+        <a href="../index.html"><h5>Site Alonrio Officiel</h5></a>
+    </div>
+
+    <div class="FooterRight">
+        <h5>© 2026 Pierre-Alain WESTER, Tous droits réservés.</h5>
+        <a href="#"><h5>News du groupe</h5></a>
+    </div>
+</footer>
 
 </body>
-</html> 
+</html>
