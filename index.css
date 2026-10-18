@@ -99,7 +99,7 @@ header {
     transition: transform 0.25s;
 }
 
-a:hover {
+.HeaderBottom a:hover {
     transform: scale(1.08);
 }
 
