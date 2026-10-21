@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/pierr0tw/Desktop/RepoGit/Pierr0tW.github.io",
+      "program": "/Users/pierr0tw/Desktop/RepoGit/Pierr0tW.github.io/build/Debug/outDebug"
+    }
+  ]
+}
