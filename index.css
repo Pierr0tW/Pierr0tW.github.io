@@ -309,6 +309,42 @@ a{
 .competence{
     margin-left: 5em;
 }
+.MainCompetence{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.MainCompetence h3{
+    text-align: center;
+    font-size: 150%;
+    color: white;
+}
+.MainCompetence h4{
+    text-align: center;
+    color: white;
+    font-size: 125%;
+}
+.MainCompetence article {
+    display: flex;
+    margin-left: 10em;
+
+}
+.MainCompetence .Row5 {
+    margin-left: 14em;
+    width: 90%;
+
+}
+
+.MainCompetence article div{
+    width: 10%;
+    padding: 2em;
+    background-color: #d4921f;
+    border-radius: 100%;
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+.MainCompetence article div img{
+    width: 100%;
+}
 
 footer{
     display: grid;
@@ -344,9 +380,18 @@ footer hr {
     column-gap: 32px;
 }
 
+.AlignementInside{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    gap: 10px;
+}
+.AlignementInside a{
+    margin: 0;
+}
+
 
 @media(max-width: 1100px){
-
     .Trio{
         display: block;
     }
@@ -364,9 +409,7 @@ footer hr {
         margin: 0 2.5em;
     }
 
-    .CarteLeft,
-    .CarteMid,
-    .CarteRight {
+    .CarteLeft, .CarteMid, .CarteRight {
         box-sizing: border-box;
         min-width: 0;
         margin: 2em 0;
@@ -376,6 +419,15 @@ footer hr {
 
 
 @media screen and (max-width: 1100px) {
+    .AlignementInside{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .AlignementInside a{
+        margin: 0;
+    }
     .About{
         margin: 1.5em 1.5em;
         padding: 20px;
@@ -410,6 +462,25 @@ footer hr {
         max-width: 100%;
         height: auto;
     }
+    .MainCompetence article div{
+        width: 10%;
+        margin-left: 2em;
+        padding: 1em;
+        background-color: #d4921f;
+        border-radius: 100%;
+    }
+
+    .MainCompetence article {
+        display: flex;
+        margin-left: 1em;
+    
+    }
+
+.MainCompetence .Row5 {
+    margin-left: 5em;
+    width: 100%;
+
+}
 }
 
 /* Téléphone*/
@@ -568,9 +639,7 @@ footer hr {
         margin: 0;
     }
 
-    .CarteLeft,
-    .CarteMid,
-    .CarteRight {
+    .CarteLeft, .CarteMid, .CarteRight {
         box-sizing: border-box;
         width: 100%;
         margin: 0;
@@ -606,4 +675,10 @@ footer hr {
     .Carte .h3CarteBis{
         margin: -1em 0 -1em 1em;
     }
+
+.MainCompetence .Row5 {
+    margin-left: 5em;
+    width: 100%;
+
+}
 }
