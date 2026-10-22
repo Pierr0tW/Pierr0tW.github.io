@@ -476,11 +476,10 @@ footer hr {
     
     }
 
-.MainCompetence .Row5 {
-    margin-left: 5em;
-    width: 100%;
-
-}
+    .MainCompetence .Row5 {
+        margin-left: 5em;
+        width: 100%;
+    }
 }
 
 /* Téléphone*/
@@ -676,9 +675,8 @@ footer hr {
         margin: -1em 0 -1em 1em;
     }
 
-.MainCompetence .Row5 {
-    margin-left: 5em;
-    width: 100%;
-
-}
+    .MainCompetence .Row5 {
+        margin-left: 5em;
+        width: 100%;
+    }
 }
