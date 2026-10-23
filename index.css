@@ -418,7 +418,7 @@ footer hr {
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
     .AboutIntro > .Objectif {
         grid-column: 1 / -1;
         grid-row: 4;
@@ -451,8 +451,8 @@ footer hr {
     .Carte{
         margin: 1.5em 1em;
         padding: 1.5em;
-        font-size: 1.15em;
     }
+    
 
     .CarteLeft, .CarteMid, .CarteRight {
         margin: 1em 0;
