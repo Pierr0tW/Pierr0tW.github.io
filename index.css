@@ -388,6 +388,7 @@ footer hr {
 }
 .AlignementInside a{
     margin: 0;
+    text-align: end;
 }
 
 
@@ -427,8 +428,8 @@ footer hr {
             
     .AlignementInside{
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: end;
+        justify-content: end;
         gap: 10px;
     }
     .AlignementInside a{
