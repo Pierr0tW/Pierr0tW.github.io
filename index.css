@@ -328,7 +328,7 @@ a{
     margin-left: 10em;
 
 }
-.MainCompetence .Row5 {
+.MainCompetence .Row4 {
     margin-left: 14em;
     width: 90%;
 
@@ -342,8 +342,25 @@ a{
     margin-left: 2em;
     margin-bottom: 2em;
 }
-.MainCompetence article div img{
+.MainCompetence article div img {
     width: 100%;
+}
+.MainCompetence article .Big img {
+    width: 90%;
+}
+.MainCompetence article .Big2 img {
+    width: 80%;
+}
+.MainCompetence article div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainCompetence article div img {
+    display: block;
+    height: auto;
+    object-fit: contain;
 }
 
 footer{
@@ -483,7 +500,7 @@ footer hr {
     
     }
 
-    .MainCompetence .Row5 {
+    .MainCompetence .Row4 {
         margin-left: 5em;
         width: 100%;
     }
