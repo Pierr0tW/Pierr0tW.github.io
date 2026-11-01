@@ -1,0 +1,67 @@
+/* =========================================================
+   MENTIONS LEGALES
+   ========================================================= */
+
+.MentionsCarte {
+    box-sizing: border-box;
+    padding: 2em 3em;
+    margin: 2em 1.75em;
+}
+
+.MentionsCarte h3 {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.MentionsCarte p {
+    font-size: 0.8em;
+}
+
+.MentionsNote {
+    padding: 1em;
+    border-left: 4px solid #a17223;
+    background-color: rgba(255, 255, 255, 0.25);
+    font-size: 0.9em;
+}
+
+.MentionsDate {
+    color: white;
+    text-align: right;
+    margin: 2em;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media screen and (max-width: 1200px) {
+    .MentionsCarte {
+        margin: 1.5em 1em;
+        padding: 1.5em;
+    }
+}
+
+/* Téléphone */
+@media screen and (max-width: 700px) {
+    .MentionsCarte {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 1em 0;
+        padding: 14px;
+        font-size: 1em;
+    }
+
+    .MentionsCarte h3 {
+        margin: 0 0 1em;
+    }
+
+    .MentionsCarte p {
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+    }
+
+    .MentionsDate {
+        margin: 1em 0;
+        text-align: center;
+    }
+}
