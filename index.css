@@ -1,9 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(231, 231, 231);
     color: black;
     margin: 0;
     overflow-x: hidden;
+    background-color: #d2962e;
 }
 
 h1 {
@@ -99,10 +108,11 @@ header {
     transform: scale(1.08);
 }
 
-hr {
-    width: 103%;
+hr {    
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
     border: none;
-    margin-left: -1em;
     border-top: 2px solid #d79522;
     color: #065159;
 }
@@ -113,9 +123,22 @@ main {
     background: linear-gradient(40deg, #012b69, #00122d, #012b69);
 }
 
+h2{
+    font-size: 2.2em;
+}
+
+a{
+    color: black;
+}
+
+ul{
+    margin-left: -1em;
+}
+
 .Left p{
     margin-left: 1em;
 }
+
 .Left img{
     margin-left:2em;
     width: 250px;
@@ -131,51 +154,28 @@ main {
 }
 
 .About h2{
-    margin-bottom: -0.25em;
     margin-top: -1em;
     color: rgb(255, 255, 255);
-}
-
-.Objectif {
-    padding: 30px;
-    color: white;
-    box-sizing: border-box;
-    margin: 2em 4em;
-}
-
-
-h2{
-    font-size: 2.2em;
-}
-
-a{
-    color: black;
 }
 
 
 .AboutIntro {
     display: grid;
-    align-items: start;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    grid-template-areas:
+        "first photo"
+        "objectives photo";
     column-gap: 32px;
-    row-gap: 0;
+    align-items: start;
 }
 
-.AboutFirst {
-    grid-area: first;
-}
 
-.AboutSecond {
-    grid-area: second;
-}
-
-.AboutObjectives{
-    grid-area: objectives;
-}
 
 .About p{
     font-size: 1.5em;
     line-height: 1.5;
-    margin: 0 0 25px;
+    margin: 0;
+    margin-bottom: 1em;
     min-width: 0;
 }
 
@@ -327,7 +327,6 @@ a{
 .MainCompetence .Row4 {
     margin-left: 14em;
     width: 90%;
-
 }
 
 .MainCompetence article div{
@@ -358,6 +357,7 @@ a{
     height: auto;
     object-fit: contain;
 }
+
 
 footer{
     display: grid;
@@ -392,11 +392,6 @@ footer hr {
 }
 
 
-.AboutIntro {
-    grid-template-columns: minmax(0, 1fr) 300px;
-    grid-template-areas:"first photo" "second photo" "objectives photo";
-    column-gap: 32px;
-}
 
 .AlignementInside{
     display: flex;
@@ -503,6 +498,12 @@ footer hr {
 
 
 @media screen and (max-width: 1200px) {
+    .Objectif {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
     .AboutIntro > .Objectif {
         grid-column: 1 / -1;
         grid-row: 4;
@@ -511,8 +512,8 @@ footer hr {
             
     .AlignementInside{
         display: flex;
-        align-items: end;
-        justify-content: end;
+        align-items: center;
+        justify-content: center;
         gap: 10px;
     }
     .AlignementInside a{
@@ -547,6 +548,10 @@ footer hr {
         gap: 12px;
         margin: 0 1em;
     }
+    .Trio .Stage{
+        gap: 12px;
+        margin-right: -1em;
+    }
 
     .Carte img {
         max-width: 100%;
@@ -574,6 +579,7 @@ footer hr {
 
 /* Téléphone*/
 @media screen and (max-width: 700px) {
+
     h1{
         font-size: 1.8em;
     }
@@ -582,7 +588,7 @@ footer hr {
         font-size: 1.5em;
     }
 
-    .HeaderTop{
+    header{
         grid-template-columns: 1fr;
         min-height: auto;
         gap: 8px;
@@ -629,8 +635,7 @@ footer hr {
         padding: 10px;
     }
 
-    .About,
-    .Objectif {
+    .About{
         margin: 1em 0;
         padding: 12px;
     }
@@ -646,9 +651,17 @@ footer hr {
     }
 
     .AboutIntro > p {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
         font-size: 1em;
         line-height: 1.4;
+    }
+    .AboutIntro > .Objectif {
+        padding: 0;
         margin: 0;
+        width: 100%;
     }
 
     .AboutPhoto {
@@ -671,7 +684,6 @@ footer hr {
         margin: 1em 0;
     }
 
-    /* Duo : premier texte, image, deuxième texte */
     .Carte {
         box-sizing: border-box;
         width: 100%;
@@ -720,7 +732,7 @@ footer hr {
         margin: 12px auto 0;
     }
 
-    /* Trio : trois cartes superposées */
+
     .Trio {
         display: flex;
         flex-direction: column;
@@ -740,80 +752,80 @@ footer hr {
         margin-left: 0;
     }
 
-/* Compétences : version téléphone */
-.competence {
-    margin: 1em 0;
-    width: 100%;
-    box-sizing: border-box;
-}
+    .competence {
+        margin: 1em 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
 
-.competence h2 {
-    font-size: 1.5em;
-    text-align: center;
-}
+    .competence h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
 
-.MainCompetence {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-}
+    .MainCompetence {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
 
-.MainCompetence article {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 12px;
-    align-items: center;
-    margin: 0;
-    width: 100%;
-    box-sizing: border-box;
-}
+    .MainCompetence article {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 12px;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
 
-.MainCompetence article h3,
-.MainCompetence article h4 {
-    grid-column: 1 / -1;
-    text-align: center;
-    font-size: 1.2em;
-    margin: 0 0 8px;
-}
+    .MainCompetence article h3,
+    .MainCompetence article h4 {
+        grid-column: 1 / -1;
+        text-align: center;
+        font-size: 1.2em;
+        margin: 0 0 8px;
+    }
 
-.MainCompetence article div {
-    width: auto;
-    aspect-ratio: 1 / 1;
-    padding: 10px;
-    margin: 0;
-    background-color: #d4921f;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    min-width: 0;
-}
+    .MainCompetence article div {
+        width: auto;
+        aspect-ratio: 1 / 1;
+        padding: 10px;
+        margin: 0;
+        background-color: #d4921f;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        min-width: 0;
+    }
 
-.MainCompetence article div img {
-    display: block;
-    width: 100%;
-    max-width: 45px;
-    height: auto;
-    object-fit: contain;
-}
+    .MainCompetence article div img {
+        display: block;
+        width: 100%;
+        max-width: 45px;
+        height: auto;
+        object-fit: contain;
+    }
 
-/* Annule les marges spécifiques de la dernière ligne */
-.MainCompetence .Row5 {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 12px;
-    margin: 0;
-    width: 100%;
-}
-.MainCompetence .Row5 div {
-    width: auto;
-    min-width: 0;
-    padding: 8px;
-    margin: 0;
-    box-sizing: border-box;
-}
+    
+    .MainCompetence .Row4 {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 12px;
+        margin: 0;
+        width: 100%;
+    }
+    .MainCompetence .Row4 div {
+        width: auto;
+        min-width: 0;
+        padding: 8px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
 
     footer {
         grid-template-columns: 1fr;
