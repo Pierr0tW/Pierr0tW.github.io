@@ -21,9 +21,6 @@ header {
     padding-bottom: 1em;
     color: rgb(0, 0, 0);
     background: linear-gradient(40deg, #d2962e, #ffb63a, #d2962e);
-}
-
-.HeaderTop {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
@@ -32,9 +29,9 @@ header {
 
 .HeaderLeft {
     grid-column: 1;
+    margin-left: -1em;
     display: flex;
     align-items: center;
-    gap: -30px;
     padding-left: 20px;
 }
 
