@@ -125,6 +125,9 @@ main {
 
 h2{
     font-size: 2.2em;
+    margin-top: -1em;
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
 }
 
 a{
@@ -154,8 +157,7 @@ ul{
 }
 
 .About h2{
-    margin-top: -1em;
-    color: rgb(255, 255, 255);
+    margin-left: -1.5em;
 }
 
 
