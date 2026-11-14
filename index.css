@@ -186,6 +186,7 @@ ul{
     width: 100%;
     height: auto;
     margin: 0;
+    border-radius: 10px;
 }
 
 .AboutPhoto a{
@@ -248,6 +249,29 @@ ul{
     margin: 0 0 1em;
 }
 
+
+.Carte .Left {
+    display: flow-root;
+}
+
+.Carte .Left > img {
+    float: right;
+    display: block;
+    width: 40%;
+    max-width: 450px;
+    height: auto;
+    margin: 0 0 1em 2em;
+    border-radius: 7px;
+}
+
+.Carte .Left > p {
+    display: block;
+    width: auto;
+    max-width: none;
+    margin: 0 0 1em;
+    padding: 0;
+    text-indent: 0;
+}
 .Trio{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -641,10 +665,11 @@ footer hr{
         padding: 12px;
     }
 
-    .About h2 {
+    .About h2{
         margin: 0 0 12px;
+        text-align: center;
     }
-    .AboutIntro {
+    .AboutIntro{
         display: flex;
         flex-direction: column;
         gap: 12px;
@@ -668,14 +693,16 @@ footer hr{
         width: 100%;
         align-items: center;
         float: none;
-margin: 0 auto;
-width: 100%;
+        margin: 0 auto;
+        width: 100%;
     }
 
     .AboutPhoto img {
         width: 100%;
         max-width: 250px;
         margin-top: 0;
+        margin: 0;
+        align-items: center;
     }
 
     .AboutPhoto a {
@@ -855,49 +882,3 @@ width: 100%;
 }
 
 
-
-.Carte .Left {
-    display: flow-root;
-}
-
-.Carte .Left > img {
-    float: right;
-    display: block;
-    width: 40%;
-    max-width: 450px;
-    height: auto;
-    margin: 0 0 1em 2em;
-    border-radius: 7px;
-}
-
-.Carte .Left > p {
-    display: block;
-    width: auto;
-    max-width: none;
-    margin: 0 0 1em;
-    padding: 0;
-    text-indent: 0;
-}
-
-@media screen and (max-width: 700px) {
-    .Carte .Left {
-        display: flow-root;
-    }
-
-    .Carte .Left > img {
-        float: none;
-        display: block;
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto 1em;
-    }
-
-    .Carte .Left > p {
-        display: block;
-        width: 100%;
-        margin: 0 0 1em;
-        padding: 0;
-        font-size: 1em;
-        line-height: 1.4;
-    }
-}
