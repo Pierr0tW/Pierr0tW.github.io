@@ -690,22 +690,23 @@ footer hr{
     }
 
     .AboutPhoto {
-        width: 100%;
-        align-items: center;
         float: none;
-        margin: 0 auto;
+        display: block;
         width: 100%;
+        max-width: 450px;
+        margin: 1em auto;
+        text-align: center;
     }
 
+
     .AboutPhoto img {
+        display: block;
         width: 100%;
-        max-width: 250px;
-        margin-top: 0;
-        margin: 0;
-        align-items: center;
+        margin: 0 auto;
     }
 
     .AboutPhoto a {
+        margin: 20px auto 0;
         font-size: 1em;
         white-space: normal;
     }
@@ -727,8 +728,8 @@ footer hr{
     
     .Left .RigthIMG {
         float: right;
-        width: 40%;
-        max-width: 350px;
+        width: 100%;
+        max-width: 450px;
         height: auto;
         margin: 0 0 1em 2em;
         border-radius: 7px;
@@ -736,6 +737,10 @@ footer hr{
     
     .Left p {
         margin: 0 0 1em;
+    }
+
+    .Left h2{
+        margin-bottom: 1em;
     }
 
     .TextBottom {
