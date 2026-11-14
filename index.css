@@ -161,16 +161,9 @@ ul{
     margin-left: -1.5em;
 }
 
-.AboutIntro{
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 300px;
-    grid-template-areas:
-        "first photo"
-        "objectives photo";
-    column-gap: 32px;
-    align-items: start;
+.AboutIntro {
+    display: flow-root;
 }
-
 
 
 .About p{
@@ -181,26 +174,23 @@ ul{
     min-width: 0;
 }
 
-.AboutPhoto{
-    grid-area: photo;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 0;
+.AboutPhoto {
+    float: right;
+    width: 300px;
+    margin: 0 0 1em 32px;
+    display: block;
 }
 
-.AboutPhoto img{
-    margin-top: 2em;
+.AboutPhoto img {
     display: block;
     width: 100%;
-    max-width: 350px;
     height: auto;
-    border-radius: 5px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    margin: 0;
 }
 
 .AboutPhoto a{
-    display: inline-block;
+    display: block;
+    margin: 1.5em 3em 0;
     margin-top: 1.5em;
     padding: 0.8em 1.5em;
     background-color: #ffb63a;
@@ -243,26 +233,19 @@ ul{
     display: block;
 }
 
-.Left{
-    display: grid;
-    grid-template-columns: 1fr  1fr;
-    align-items: start;
+.Left {
+    display: flow-root;
 }
 
-.LeftText{
-    grid-row: 1;
-    grid-column: 1;
+.RigthIMG {
+    float: right;
+    width: 40%;
+    margin: 0 0 1em 2em;
+    border-radius: 7px;
 }
 
-.RigthIMG{
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.TextBottom{
-    margin: 1em 1em 2em 1em; 
-    grid-column: 1/3;
-    grid-row: 2;
+.Left p {
+    margin: 0 0 1em;
 }
 
 .Trio{
@@ -661,7 +644,6 @@ footer hr{
     .About h2 {
         margin: 0 0 12px;
     }
-
     .AboutIntro {
         display: flex;
         flex-direction: column;
@@ -685,6 +667,9 @@ footer hr{
     .AboutPhoto {
         width: 100%;
         align-items: center;
+        float: none;
+margin: 0 auto;
+width: 100%;
     }
 
     .AboutPhoto img {
@@ -709,23 +694,21 @@ footer hr{
         padding: 14px;
         font-size: 1em;
     }
-
     .Left {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
+        display: flow-root;
     }
-
-    .LeftText {
-        order: 1;
-        width: 100%;
-        min-width: 0;
+    
+    .Left .RigthIMG {
+        float: right;
+        width: 40%;
+        max-width: 350px;
+        height: auto;
+        margin: 0 0 1em 2em;
+        border-radius: 7px;
     }
-
-    .RigthIMG {
-        order: 2;
-        width: 100%;
-        min-width: 0;
+    
+    .Left p {
+        margin: 0 0 1em;
     }
 
     .TextBottom {
@@ -868,5 +851,53 @@ footer hr{
     .MainCompetence .JetBrain img {
         width: 90%;
         max-width: none;
+    }
+}
+
+
+
+.Carte .Left {
+    display: flow-root;
+}
+
+.Carte .Left > img {
+    float: right;
+    display: block;
+    width: 40%;
+    max-width: 450px;
+    height: auto;
+    margin: 0 0 1em 2em;
+    border-radius: 7px;
+}
+
+.Carte .Left > p {
+    display: block;
+    width: auto;
+    max-width: none;
+    margin: 0 0 1em;
+    padding: 0;
+    text-indent: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .Carte .Left {
+        display: flow-root;
+    }
+
+    .Carte .Left > img {
+        float: none;
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 1em;
+    }
+
+    .Carte .Left > p {
+        display: block;
+        width: 100%;
+        margin: 0 0 1em;
+        padding: 0;
+        font-size: 1em;
+        line-height: 1.4;
     }
 }
