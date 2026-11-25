@@ -518,6 +518,11 @@ footer hr{
         width: 100%;
         box-sizing: border-box;
     }
+
+    .HeaderLeft{
+        display: none;
+    }
+
     .AboutIntro > .Objectif{
         grid-column: 1 / -1;
         grid-row: 4;
